@@ -7,7 +7,7 @@
 </p>
 
 <p>
-<%= image_tag("rails.png")  %>
+<%= image_tag @user.image_url.to_s  %>
 </p>
 
 <p>

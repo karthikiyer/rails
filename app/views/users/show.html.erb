@@ -46,10 +46,11 @@
   <%= f.submit "Post", class: "btn btn-primary" %>
 <% end %>
 <%end%>
-
+<% if logged_in %>
 <%= form_for(current_user, :html => {:multipart => true}) do |f| %>
 <%= f.file_field :image %>
 <p><%= f.submit "submit" %></p>
+<%end%>
 <%end%>
 
 <% if @user.errors.any? %>
