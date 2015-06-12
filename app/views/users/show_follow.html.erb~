@@ -1,0 +1,9 @@
+<% provide(:title, @title) %>
+<div class="row">
+  <div>
+    <h3><%= @title %></h3>
+    <% if @users.any? %>
+      
+    <% end %>
+  </div>
+</div>
